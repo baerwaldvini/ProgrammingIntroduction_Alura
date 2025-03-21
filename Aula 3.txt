@@ -1,0 +1,18 @@
+Existem diversas áreas de atuação em programação e, de acordo com o levantamento realizado pela Brascom, até 2025 teremos mais de 800 mil vagas apenas no Brasil na área de tecnologia. Portanto, há muitas oportunidades e desafios nessa área, em todas as divisões mencionadas. O mais importante é saber como se destacar e como conseguir ser contratado em uma dessas vagas que surgirão até 2025.
+
+Como se destacar no mercado de programação?
+
+Uma dica importante é mostrar o que estamos aprendendo, demonstrar nossa evolução e compartilhar o que sabemos fazer. Um passo inicial é aprender a utilizar um site chamado GitHub.
+
+O GitHub permite que coloquemos todos os projetos que estamos desenvolvendo para aprender algo novo. Podemos empacotar esses projetos, colocá-los no site e montar nosso portfólio. Isso facilita, pois em praticamente todas as entrevistas na área de tecnologia, a primeira coisa que os recrutadores pedem é um link para nosso GitHub, para que possam entender nosso nível, como está nosso código e que tipo de projeto já realizamos. Além disso, por ser um histórico, conseguimos manter todos os projetos e visualizar claramente nossa evolução, a frequência com que testamos coisas novas e o que estamos aprendendo. Isso ajuda bastante nesse primeiro passo.
+
+Além do GitHub, é importante ter uma presença no LinkedIn. Se ainda você ainda não tem um perfil no LinkedIn, é importante criar um e incluir um link para o seu respositório no GitHub. Mais importante ainda é começar a postar sobre tudo o que você está aprendendo e o que te interessa.
+
+Também é essencial realizar buscas, montar uma rede de contatos e comunidades e seguir empresas interessantes, seja pelo conteúdo ou pelo serviço que oferecem. Isso proporciona uma visão do que estão procurando e de novas vagas, por exemplo. As comunidades também são interessantes para nos mantermos atualizados.
+
+Montar essa rede de contatos e seguir pessoas com os mesmos interesses nos ajuda a ganhar visibilidade. As pessoas começam a visitar nosso seu perfil, encontram o GitHub e percebem que estamos inseridos na área e nos atualizando constantemente.
+
+Devemos manter nosso perfil sempre atualizado e postar regularmente para mostrar que estamos ativos. Isso facilita a decisão de alguém entrar em contato conosco. São essas as dicas que ajudam a aumentar nosso destaque.
+
+ 
+ 
