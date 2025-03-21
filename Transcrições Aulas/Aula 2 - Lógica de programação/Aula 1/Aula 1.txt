@@ -1,0 +1,3 @@
+Aula foi introdução ao comando ALERT em JS -> e alguns conceitos sobre JS.
+
+Importação do projeto no VS.

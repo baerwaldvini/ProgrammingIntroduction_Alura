@@ -1,0 +1,23 @@
+Agora, precisaremos seguir uma regra do JavaScript, que é adicionar parênteses e dentro a condição que queremos verificar.
+
+Então, escrevemos numeroSecreto seguido de =. Porém, repare que há algo diferente. Anteriormente, usamos o sinal de igual para atribuir um valor a uma variável. No entanto, quando queremos fazer uma comparação, usamos um sinal de igual duplo ==.
+
+Mas temos um problema. Como vamos comparar o valor do prompt? Afinal, ele não armazena o valor sozinho, certo?
+
+alert('Boas-vindas ao jogo do número secreto');
+let numeroSecreto = 5;
+let chute = prompt('Escolha um número entre 1 e 10');
+
+Agora conseguimos comparar. Então, na linha 5, se o chute for igual ao número inserido, podemos comparar. Então, após o sinal de igual duplo, escrevemos chute.
+
+alert('Boas-vindas ao jogo do número secreto');
+let numeroSecreto = 5;
+let chute = prompt('Escolha um número entre 1 e 10');
+
+if (chute == numeroSecreto) {
+        console.log("Isso aí! você descobriu o número secreto (5)");
+}
+
+Lembrando que quando usamos o if na linha 5, essa instrução específica não leva ponto e vírgula. Mas, quando criamos o código que será executado, caso a condição seja verdadeira, nós temos essa mensagem.
+
+Salvamos o código e abrimos o navegador para testar. Atualizamos a página e clicamos em "Ok". Depois, chutamos o número 5, acertaremos propositalmente. Feito isso, aparece a mensagem Você acertou!".
