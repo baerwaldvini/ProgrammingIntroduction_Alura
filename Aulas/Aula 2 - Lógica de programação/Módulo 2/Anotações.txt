@@ -1,0 +1,36 @@
+Aula 1: 
+
+Resumo:
+
+Comentários organizando o código, explicando as funções usadas.
+
+Explicação do se não;
+
+Aula 2:
+
+Concatenação:
+
+fora das aspas:
+console.log('secretNumber : ' + secretNumber)
+
+com uma mensagem só:
+
+console.log(`secretNumber : ${secretNumber}`)
+
+deve-se usar crase ao invés de aspas
+
+Aula 3:
+
+Live server-> Instalar a extensão que abre uma espécie de 'servidor', para trazer a alteração do código em tempo real
+ 
+Ponto e virgula no JS:
+
+No JavaScript, o uso do ponto e vírgula (;) é uma prática recomendada. A linguagem possui um mecanismo chamado "inserção automática de ponto e vírgula" (automatic semicolon insertion - ASI), que tenta adicionar ponto e vírgulas automaticamente em certos pontos do código onde eles são ausentes.
+
+Isso significa que, em alguns casos, o JavaScript tentará "corrigir" a falta de ponto e vírgula inserindo-o automaticamente. No entanto, a interpretação do ASI pode levar a comportamentos inesperados e erros sutis, especialmente quando as regras não são claras.
+
+Portanto, para evitar possíveis problemas e garantir a clareza do código, muitos desenvolvedores preferem adicionar explicitamente ponto e vírgula em seus programas.
+
+Apesar da inserção automática de ponto e vírgula poder ajudar a mitigar erros de sintaxe, é uma boa prática adicionar ponto e vírgula manualmente para evitar ambiguidades e problemas de interpretação. Isso é particularmente importante em situações como quando várias instruções estão em uma mesma linha, ao usar declarações de retorno de valor ou ao minificar o código.
+
+Em projetos colaborativos ou de grande escala, a consistência no estilo de codificação e a clareza do código são cruciais, e o uso explícito de ponto e vírgula contribui para um código mais legível e menos sujeito a erros de interpretação por parte dos programadores e do próprio mecanismo de ASI.
