@@ -1,0 +1,64 @@
+Aula 1 :
+
+Ajustada estrutura condicional, para que caso o número informado não seja igual ao secreto, ele valide se é maior ou menor, através de um if dentro do else do primeiro if.
+
+if (){
+  ...
+} else {
+  if (){
+    ...
+  } else {
+    ...
+  }
+}
+
+Aula 2:
+
+Introdução ao enquanto (while)
+
+Enquanto determinada condição não for verdadeira, o código não para de executar
+
+sintaxe:
+
+while (randomNumber != secretNumber) {
+  randomNumber = prompt('Escolha um número de 0 a 100: ')
+
+}
+
+Aula 3:
+
+Método para vincular quantas tentativas uma pessoa precisou para acertar.
+Através da determinação de uma variável e soma dessa mesma variável sempre que o código voltar ao while.
+
+tryNumber = tryNumber + 1 -> mesma sintaxe de tryNumber++;  
+
+Operadores:
+
+AND (&&)
+O operador AND, representado pelos símbolos "&&", é utilizado para combinar duas condições e avaliar se ambas são verdadeiras. Se ambas as condições forem verdadeiras, o resultado será… verdadeiro. Caso contrário, logicamente será falso.
+
+OR (||)
+O operador OR, representado pelos símbolos "||", é usado para verificar se pelo menos uma das condições é verdadeira. Se uma das condições for verdadeira, o resultado será verdadeiro. Se ambas forem falsas, o resultado será falso. 
+
+
+Operador - Nome 
+== -	Igual
+!= -	Diferente	
+< -	Menor que	
+>	- Maior que	
+<= -	Menor ou igual	
+>= -	Maior ou igual	
+
+Operador - Nome	
+&& - E / AND
+ǀǀ - OU / OR
+!	- NEGAÇÃO
+
+Resumo: 
+
+Nesta aula:
+Aprendemos a verificar se um número é maior ou menor do que outro utilizando estruturas condicionais (if/else) em nosso programa;
+
+Utilizamos o loop "while" para repetir um bloco de código enquanto uma determinada condição for verdadeira, e permitir assim que o programa execute uma ação várias vezes;
+
+Implementamos um contador de tentativas para acompanhar e exibir a quantidade de vezes que o usuário tentou adivinhar um número secreto. Podemos fazer isso, por exemplo, em um jogo de adivinhação.
