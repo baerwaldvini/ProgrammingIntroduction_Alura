@@ -1,0 +1,47 @@
+//Criar uma função que exibe "Olá, mundo!" no console.
+function helloWorld() {
+  return 'Hello, World!'
+}
+console.log(helloWorld())
+
+//Criar uma função que recebe um nome como parâmetro e exibe "Olá, [nome]!" no console.
+
+function helloWorld(name) {
+  return `Hello, ${name}!`
+}
+console.log(helloWorld('VINI'))
+
+// Criar uma função que recebe um número como parâmetro e retorna o dobro desse número.
+
+function doubleNumber(number) {
+  return number * 2
+}
+console.log(doubleNumber(3))
+
+// Criar uma função que recebe três números como parâmetros e retorna a média deles.
+
+function avgNumber(num1, num2, num3) {
+  let media = (num1 + num2 + num3) / 3
+  return media
+}
+console.log(avgNumber(1, 2, 3))
+
+// Criar uma função que recebe dois números como parâmetros e retorna o maior deles.
+
+function maxNumber(num1, num2) {
+  if (num1 > num2) {
+    return num1
+  } else if (num1 < num2) {
+    return num2
+  } else {
+    return 'Numeros Iguais'
+  }
+}
+console.log(maxNumber(3, 2))
+
+// Criar uma função que recebe um número como parâmetro e retorna o resultado da multiplicação desse número por ele mesmo
+
+function multNumber(num1) {
+  return num1 * num1
+}
+console.log(multNumber(100))

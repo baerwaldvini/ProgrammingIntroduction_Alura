@@ -1,0 +1,45 @@
+Aula 1:
+
+Padrão de código:
+
+let campo = document.querySelector(tag)
+campo.innerHTML = texto
+
+Com essa sintaxe, será construido uma função para ler o parametro e retornar um valor especifico, mantendo assim um clean code.
+
+
+function exibirTextoNaTela(tag, texto){
+  let campo = document.querySelector(tag)
+  campo.innerHTML = texto
+}
+
+chamar função: exibirTextoNaTela('h1', 'Jogo do número secreto')
+
+Aula 2: Função com retorno
+
+function gerarNumero() {
+  let numberRandom = parseInt(Math.random() * (maxNumber + 1))
+  return numberRandom
+}
+
+O return vai voltar o que a função gerarNumero
+
+
+Aula 3: Booleano
+
+function verificarChute() {
+  let chute = document.querySelector('input').value
+}
+
+Função para pegar o que o usuário vai escrever no campo e após isso comparar em boolean se ele é giaul ao numero aleartorio
+
+chute == secretNumber
+
+Tipo de Função                | Exemplo de Código                          | Uso
+------------------------------|--------------------------------------------|---------------------------------------------------------
+Sem retorno e sem parâmetro    | function saudacao() { ... }                | Execução de bloco de código simples.
+Sem retorno e com parâmetro    | function cumprimentar(nome) { ... }        | Execução de bloco de código com argumentos.
+Com retorno e sem parâmetro    | function gerarNumeroAleatorio() { ... }    | Cálculo e retorno de um valor específico.
+Com retorno e com parâmetro    | function somar(a, b) { ... }               | Cálculo e retorno baseado em argumentos.
+Função anônima                 | let saudacao = function() { ... };         | Definição de função sem nome localmente.
+Arrow function                 | let quadrado = x => x * x;                 | Definição concisa de funções curtas.
