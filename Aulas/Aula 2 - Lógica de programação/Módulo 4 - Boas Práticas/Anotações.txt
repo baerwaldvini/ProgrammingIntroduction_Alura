@@ -1,0 +1,12 @@
+Aula 1:
+
+Código break
+Para completamente a estruturação do while
+
+Usa-se caso a condição seja totalmente atendida, ou se deseja parar o código.
+
+Aula 2:
+
+Refatoração do código para diminur o if com operador ternário
+
+let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
