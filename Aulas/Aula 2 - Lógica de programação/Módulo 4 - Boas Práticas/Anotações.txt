@@ -10,3 +10,20 @@ Aula 2:
 Refatoração do código para diminur o if com operador ternário
 
 let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
+
+Aula 3:
+
+Ajuste para que o número seja aleartório e não fixado.
+
+Para isso, a função math.random() foi usada.
+
+Documentação JS:
+https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
+
+ctrl+L -> limpa console inspecionar elemento
+
+Math.random tem um problema, pois ele sempre gera um número entre 0 e 1, ex: 0,398219849. Para isso, se multiplica ele por 10 -> jogando o número para uma casa depois da virgula, e usa-se o comando parseINT na função.
+
+parseInt (Math.random()*10)
+
+A função Math.random em JavaScript gera um número decimal aleatório entre 0 (inclusivo) e 1 (exclusivo) de forma pseudo aleatória. Isso significa que os números gerados podem estar em qualquer lugar entre 0 (inclusive) e quase 1 (exclusivo), com uma precisão de até 16 casas decimais. A função Math.random usa um valor interno inicial que é geralmente baseado no horário atual do sistema, gerando números pseudo aleatórios.

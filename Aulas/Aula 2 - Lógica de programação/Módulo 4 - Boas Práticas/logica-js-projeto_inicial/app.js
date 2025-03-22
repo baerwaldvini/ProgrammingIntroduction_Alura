@@ -1,5 +1,5 @@
 alert('Boas-vindas ao jogo do Número Secreto')
-let secretNumber = 29
+let secretNumber = parseInt(Math.random() * 100 + 1)
 console.log(`secretNumber : ${secretNumber}`)
 
 let randomNumber
