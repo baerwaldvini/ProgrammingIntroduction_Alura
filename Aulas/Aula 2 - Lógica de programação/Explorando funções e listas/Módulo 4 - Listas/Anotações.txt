@@ -1,0 +1,48 @@
+Aula 1:
+-> Implementação de uma lista para que não sorteie um número repetitivo
+
+Array
+
+sintaxe: let numeros = []
+Buscar registros na lista = lista.lenght
+Buscar o último registro da lista: lista.lenght-1
+
+Aula 2: Colocar na prática a lista no projeto
+
+método includes: ve se o valor já existe na lista
+método push: adiciona novo valor na lista
+
+recursão: chamar a função dentro da prórpia função -> atentar para utilização da função em projetos maiores
+
+sintaxe final:
+
+listaDeNumerosSorteados = []
+
+// Função de geração de números aleartórios de 0 a 1000
+function gerarNumero() {
+  let numeroEscolhido = parseInt(Math.random() * (maxNumber + 1))
+  if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+    return gerarNumero()
+  } else {
+    listaDeNumerosSorteados.push(numeroEscolhido)
+    console.log(listaDeNumerosSorteados)
+    return numeroEscolhido
+  }
+}
+
+Aula3:
+
+Ajuste função para não travar o game quando a lista tive o mesmo valor final, ex: quando lista chegar em 10 ele resetar 
+
+if (quantidadeDeElementosNaLista == maxNumber) {
+    listaDeNumerosSorteados = []
+  }
+
+Uma array no JavaScript é uma estrutura de dados que permite armazenar e organizar vários valores em uma única variável. Os valores em uma array podem ser de qualquer tipo de dado, como números, strings, objetos, outras arrays e assim por diante. As arrays em JavaScript são indexadas, o que significa que cada valor dentro dela é associado a um índice numérico, começando geralmente do índice 0.
+
+let frutas = ["Maçã", "Uva", "Laranja"];
+
+RESUMO:
+
+Aprendemos a melhorar o código existente, tornando-o mais eficiente e legível. Neste caso, refatoramos a função que realiza o sorteio do número secreto, tornando-a mais robusta e garantindo que o número sorteado não seja repetido;
+
