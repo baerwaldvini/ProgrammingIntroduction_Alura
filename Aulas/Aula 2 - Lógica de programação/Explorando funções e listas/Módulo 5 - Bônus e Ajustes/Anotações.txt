@@ -1,0 +1,24 @@
+Aula 1:
+
+Apresentação do speech:
+
+Voz responsiva.
+
+// Função que pede uma tag e texto e retorna o valor informado
+function exibirTextoNaTela(tag, texto) {
+  let campo = document.querySelector(tag)
+  campo.innerHTML = texto
+  responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 })
+}
+
+<script src="https://code.responsivevoice.org/responsivevoice.js"></script>
+
+Aula 2:
+
+Conceitos de github, já possuo conhecimentos de git.
+
+Apredemos criar conta;
+Apredemos criar repositório;
+Apredemos criar branch;
+Operações no git como add. -> init -> commit -> pull -> push -> log
+
