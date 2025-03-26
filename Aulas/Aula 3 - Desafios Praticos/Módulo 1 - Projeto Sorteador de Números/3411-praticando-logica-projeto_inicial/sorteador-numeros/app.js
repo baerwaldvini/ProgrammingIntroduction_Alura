@@ -22,6 +22,7 @@ function sortear() {
     quantidade--
     console.log(numerosSorteados)
   }
+  document.getElementById('btn-reiniciar').removeAttribute('disabled')
   return exibirTextoNaTela(
     'resultado',
     'Números sorteados: ' + numerosSorteados
@@ -30,4 +31,9 @@ function sortear() {
 
 function renderNumber(min, max) {
   return parseInt(Math.random() * (max - min + 1)) + min
+}
+
+function reiniciar() {
+  numerosSorteados = []
+  exibirTextoNaTela('resultado', 'Números sorteados:  nenhum até agora')
 }
