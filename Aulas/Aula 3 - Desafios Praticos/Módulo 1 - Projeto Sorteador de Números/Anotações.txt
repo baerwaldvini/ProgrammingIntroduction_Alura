@@ -12,3 +12,92 @@ O DOM (Document Object Model) é uma representação da estrutura de um document
 É por isso que, em nosso código JavaScript, frequentemente acessamos o valor de um elemento na página por meio do objeto document, referenciando-o pelo identificador ou por outra propriedade. Um exemplo disso é o uso de document.getElementById().
 
 https://www.alura.com.br/artigos/o-que-e-o-dom
+
+Soluão para atender o que faltou na minha programação inidivual:
+
+}
+  let resultado = document.getElementById('resultado')
+  resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`
+}
+
+em minha versão não consegui deixar o texto igual ao configuração do CSS
+Para isso, o texto de todo o label é inserido
+
+Funções novas aprendidas:
+
+function activateButton() {
+  let button = document.getElementById('btn-reiniciar')
+  if (button.classList.contains('container__botao-desabilitado')) {
+    button.classList.remove('container__botao-desabilitado')
+    button.classList.add('container__botao')
+  } else {
+    button.classList.remove('container__botao')
+    button.classList.add('container__botao-desabilitado')
+  }
+}
+
+
+Desafio 1:
+
+Ao efetuar mais testes em nossa aplicação Sorteador de Números, você observará que está sendo permitido colocar um valor no campo “Do número” maior que o valor informado no campo “Até o número”, o que não é recomendável. O ideal é emitir um alerta para que o usuário reveja se inseriu os dados corretamente.
+
+Agora é a sua vez de colocar a mão na massa! Implemente uma proteção dentro da função sortear para que esse alerta seja exibido.
+
+DEsafio 2:
+
+Como podemos proteger essa situação? Podemos verificar se a quantidade de números escolhidos no campo “Quantidade de números” é igual ou inferior ao intervalo de números entre os campos “Do número” e “Até o número”. Isso irá prevenir que esse erro aconteça.
+
+Agora, então, é a sua vez de colocar a mão na massa! Vamos implementar essa proteção?
+
+Códigos desafio:
+
+ if (de > ate) {
+    alert(
+      'O valor "Do Número" não pode ser maior que o valor de "Ate o numero"'
+    )
+    reiniciar()
+  } else if (ate - de <= quantidade) {
+    alert(
+      'A quantidade não pode ser menor do que o intervalo entre "Do Número" até "Ate o numero"'
+    )
+    reiniciar()
+  } else {
+    let resultado = document.getElementById('resultado')
+    activateButton()
+    resultado.innerHTML = `<label class="texto__paragrafo">Números sorteados: ${sorteados}</label>`
+  }
+
+
+  Resumo geral módulo:
+
+  Analisar o código de uma página HTML para entender sua estrutura e planejar o código de sua funcionalidade;
+
+Declarar variáveis no JavaScript para armazenar elementos recuperados da página;
+
+Recuperar elementos da página com JavaScript, com o uso da função document.getElementById();
+
+Recuperar valores digitados em campos de um formulário na página, via propriedade value;
+
+Utilizar o recurso de Template String, do JavaScript, para concatenar valores de variáveis em String.
+
+Utilizar a função parseInt, no JavaScript, para converter um valor do tipo String para um número inteiro;
+
+Fazer uma estrutura de repetição utilizando for para gerar números aleatórios no sorteador;
+
+Declarar uma variável do tipo array para representar uma lista;
+
+Adicionar um elemento a um array com a função push;
+
+Utilizar um código já desenvolvido por terceiros para realizar o sorteio de um número aleatório dentro de um intervalo.
+
+Declarar um bloco condicional if/else para implementar a funcionalidade de alterar o status do botão Reiniciar.
+
+Acessar a lista de classes que um elemento da página possui, via propriedade classList;
+
+Verificar se um elemento da página possui uma determinada classe CSS, via função classList.contains();
+
+Remover uma classe CSS de um elemento da página, via função classList.remove();
+
+Adicionar uma classe CSS a um elemento da página, via função classList.add();
+
+Modificar o código HTML de um elemento na página, via propriedade innerHTML.
