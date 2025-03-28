@@ -8,6 +8,8 @@ function adicionar() {
 
   if (nameFriendId.value == '') {
     alert('Preencha o campo com o nome do amigo')
+  } else if (listNamesSort.includes(nameFriendId.value)) {
+    alert('Amigo já adicionado!')
   } else {
     listNamesSort.push(nameFriendId.value)
   }
@@ -28,33 +30,37 @@ function showNames() {
 
 // função de sortear
 function sortear() {
-  embaralha(listNamesSort)
+  if (listNamesSort.length % 2 != 0) {
+    alert('Você precisa adicionar uma quantidade par de amigos para sortear!')
+  } else {
+    embaralha(listNamesSort)
 
-  // Ler o atual texto na tela
-  let finalSorterId = document.getElementById('lista-sorteio')
-  let finalSorterText = finalSorterId.textContent
+    // Ler o atual texto na tela
+    let finalSorterId = document.getElementById('lista-sorteio')
+    let finalSorterText = finalSorterId.textContent
 
-  // Variavem que vai receber o conteudo HTML para colocar no inner
-  let contentHTML = ''
+    // Variavem que vai receber o conteudo HTML para colocar no inner
+    let contentHTML = ''
 
-  finalSorterText = listNamesSorted
-  finalSorterId.textContent = finalSorterText
+    finalSorterText = listNamesSorted
+    finalSorterId.textContent = finalSorterText
 
-  // Determinando o meio da lista
-  let halfSize = Math.floor(listNamesSort.length / 2)
+    // Determinando o meio da lista
+    let halfSize = Math.floor(listNamesSort.length / 2)
 
-  // Para cada elemento antes da metade da lista será concatenado com um elemento depois da metade da lista
-  for (let i = 0; i < halfSize; i++) {
-    // j vai ser o último elemento da lista -i
-    let j = listNamesSort.length - 1 - i
+    // Para cada elemento antes da metade da lista será concatenado com um elemento depois da metade da lista
+    for (let i = 0; i < halfSize; i++) {
+      // j vai ser o último elemento da lista -i
+      let j = listNamesSort.length - 1 - i
 
-    listNamesSorted.push(listNamesSort[i] + ' - ' + listNamesSort[j])
+      listNamesSorted.push(listNamesSort[i] + ' - ' + listNamesSort[j])
 
-    contentHTML += `<p id="lista-amigos">${
-      listNamesSort[i] + ' -> ' + listNamesSort[j]
-    }</p>`
+      contentHTML += `<p id="lista-amigos">${
+        listNamesSort[i] + ' -> ' + listNamesSort[j]
+      }</p>`
+    }
+    finalSorterId.innerHTML = contentHTML
   }
-  finalSorterId.innerHTML = contentHTML
 }
 
 // Função de embaralhar listar pronta da internet não fui eu quem fiz
